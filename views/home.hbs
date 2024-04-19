@@ -1,0 +1,18 @@
+<h1>Lista clínica</h1>
+
+<ol class="list-group list-group-numbered mt-5">
+    <h2>Mujeres</h2>
+
+    {{#each female}}
+    <li class="list-group-item">Nombre: {{this.firstName}} - Apellido: {{this.lastName}} - ID: {{this.id}} - Timestamp:
+        {{this.date}}</li>
+    {{/each}}
+</ol>
+
+<ol class="list-group list-group-numbered mt-5">
+    <h2>Hombres</h2>
+    {{#each male}}
+    <li class="list-group-item">Nombre: {{this.firstName}} - Apellido: {{this.lastName}} - ID: {{this.id}} - Timestamp:
+        {{this.date}}</li>
+    {{/each}}
+</ol>
