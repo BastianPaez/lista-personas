@@ -28,8 +28,7 @@ router.get('/', async (req, res) => {
     const female = _.filter(users, {gender : 'female'})
 
     console.log(chalk.bgWhite.blue(users))
-    console.log(chalk.bgWhite.blue(female))
-    console.log(chalk.bgWhite.blue(male))
+
 
     res.render('home', { male, female });
 })
